@@ -8,7 +8,6 @@ const Tracks = (props) => {
   const { isLoading: loading, track_list: tracks } = context.tracks;
   const { heading } = context;
 
-  console.log(loading);
   return (
     <React.Fragment>
       {loading ? (

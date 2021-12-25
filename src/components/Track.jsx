@@ -21,6 +21,7 @@ const Track = ({ track }) => {
           <Link
             to={`lyrics/track/${track.track_id}`}
             className="btn btn-dark btn-block"
+            style={{ width: "100%" }}
           >
             <i className="fa fa-chevron-right"></i> View Lyrics
           </Link>

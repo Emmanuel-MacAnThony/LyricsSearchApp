@@ -9,6 +9,13 @@ export function getTracks() {
   );
 }
 
+export function searchTracks(trackTitle) {
+  const apiEndPoint = `track.search?q_track=${trackTitle}&page_size=10&page=1&s_track_rating=desc`;
+  return http.get(
+    `https://cors-anywhere.herokuapp.com/${config.apiUrl}${apiEndPoint}&apikey=${config.apiKey}`
+  );
+}
+
 export function getLyrics(id) {
   const apiEndPoint = `track.lyrics.get?track_id=${id}`;
   return http.get(
